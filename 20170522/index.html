@@ -31,23 +31,23 @@
                     <tr>
                         <td>電話番号</td>
                         <td>
-                            <input type = "text" name = "phone1" size = "3" maxlength = "3" >-
-                            <input type = "text" name = "phone2" size = "4" maxlength = "4" >-
-                            <input type = "text" name = "phone3" size = "4" maxlength = "4" >
+                            <input type = "text" name = "phone[]" size = "3" maxlength = "3" required pattern = "^[0-9]+4">-
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+4">-
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+4">
                         </td>
                     </tr>
                     <tr>
                         <td>メールアドレス</td>
                         <td>
-                            <input type = "text" name = "acount" size = "10">@
-                            <input type = "text" name = "domain" size = "10">
+                            <input type = "text" name = "acount[]" size = "10">@
+                            <input type = "text" name = "acount[]" size = "10">
                         </td>
                     </tr>
                     <tr>
                         <td>どこで知ったか</td>
                         <td>
-                            <input type= "checkbox" name = "book1" value = "雑誌" >雑誌
-                            <input type= "checkbox" name = "book2" value = "新聞" >新聞
+                            <input type= "checkbox" name = "info[]" value = "雑誌" >雑誌
+                            <input type= "checkbox" name = "info[]" value = "新聞" >新聞
                         </td>
                     </tr>
                     <tr>
