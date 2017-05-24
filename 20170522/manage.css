@@ -1,0 +1,8 @@
+.g{
+    display: flex;
+    border: 1px solid black;
+}
+.r{
+    width: 20%;
+    border: 1px solid black;
+}

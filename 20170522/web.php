@@ -1,16 +1,14 @@
 <?php
-    session_start();
-
+    $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT);
  ?>
-
 <!DOCTYPE html>
 <html lang = "ja">
     <head>
         <meta charset = "utf-8">
-        <title>確認画面</title>
+        <title>お問い合わせフォーム</title>
     </head>
         <body>
-            <div Align = "center" > 確認画面　</div>
+            <h1><div Align = "center" > お問い合わせ内容確認　</div></h1>
                 <form action = "comp.php" method = "post">
                     <table border = "0" align = "center" >　
                     <tr>
@@ -69,9 +67,7 @@
                             <?php
 
                                 $acount = $_POST['acount'];
-                                foreach($acount as $value){
-                                    echo "$value";
-                                }
+                                    echo $acount[0]."@".$acount[1];
 
                              ?>
                         </td>
@@ -95,6 +91,7 @@
                             <?php
 
                                 if(isset($_POST['category'])){
+                                    $cate = $_POST['category'];
                                     echo $_POST['category'];
                                 }
                             ?>
@@ -102,9 +99,10 @@
                     </tr>
                     <tr>
                         <td>質問内容</td>
-                        <td colsspan = "2">
+                        <td >
                             <?php
                                 if(isset($_POST['msg'])){
+                                    $msg = $_POST['msg'];
                                     echo $_POST['msg'];
                                 }
                              ?>
@@ -116,11 +114,26 @@
                             <input type ="button" value = "戻る" onclick = "history.back()">
                         </td>
                     </tr>
+                    <tr>
+                        <td = colspan = "2">
+                            <a href = "index.html">未入力状態でお書き直しします。</a>
+                        </td>
+                    </tr>
                     </table>
-                    <input type = "hidden" name= "fname" value = "<?php  echo $lname;?>">
-                    <input type = "hidden" name= "fname" value = "<?php  echo $fname;?>">
-                    <input type = "hidden" name= "fname" value = "<?php  echo $s;?>">
-                    <input type = "hidden" name= "fname" value = "<?php echo $phone[0]."-".$phone[1]."-".$phone[2] ?>">
+
+
+                    <input type = "hidden" name = "num" value = "<?php echo $number ;?>">
+                    <input type = "hidden" name= "Lastname" value = "<?php  echo $lname;?>">
+                    <input type = "hidden" name= "Firstname" value = "<?php  echo $fname;?>">
+                    <input type = "hidden" name= "s" value = "<?php  echo $s;?>">
+                    <input type = "hidden" name= "address" value = "<?php  echo $add;?>">
+                    <input type = "hidden" name= "phone" value = "<?php echo $phone[0]."-".$phone[1]."-".$phone[2]; ?>">
+                    <input type = "hidden" name= "acount" value = "<?php  echo $acount[0]."@".$acount[1];?>">
+                    <input type = "hidden" name= "info" value = "<?php  foreach($info as $value) echo "$value ";?>">
+                    <input type = "hidden" name= "category" value = "<?php  echo $cate;?>">
+                    <input type = "hidden" name= "msg" value = "<?php  echo $msg;?>">
+
+
                 </form>
         </body>
  </html>
