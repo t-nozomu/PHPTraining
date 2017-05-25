@@ -1,0 +1,32 @@
+.d{
+    display: flex;
+    width: 400px;
+    margin: 10px auto 10px auto;
+}
+
+.dd{
+    width: 500px;
+    height: 600px;
+    margin: 10px auto 10px auto;
+    background: #dcdcdc;
+    border: 4px ridge green;
+}
+.d1{
+    width: 140px;
+}
+.d2{
+    flex: 1 1 auto;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background: #FFFFcc;
+}

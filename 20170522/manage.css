@@ -1,8 +1,75 @@
-.g{
-    display: flex;
-    border: 1px solid black;
+
+/*-------------------------------管理画面--------------------------------------*/
+
+.num{
+    width:  140px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
 }
-.r{
-    width: 20%;
-    border: 1px solid black;
+
+.name{
+    width: 200px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.s{
+    width: 40px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.add{
+    width: 200px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.phone{
+    width: 180px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.acount{
+    width: 250px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.info{
+    width: 120px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.cate{
+    width: 110px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.msg{
+    width: 300px;
+    border: 1px solid blue;
+    padding: 10px 0px 10px 0px;
+}
+
+.g{
+    display:flex;
+    text-align: center;
+    margin: auto;
+    width : 1500px;
+}
+/*--------------------------------------------------------------------------------*/
+
+
+h1{
+    text-align: center;
+    color : black;
+
+}
+
+body{
+    background: #FFFFCC;
 }
