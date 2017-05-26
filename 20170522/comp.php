@@ -3,13 +3,17 @@
     <head>
         <meta charset = "utf-8">
         <title>お問い合わせフォーム</title>
+        <link rel = "stylesheet" type = "text/css" href = "style.css">
     </haed>
         <body>
-            <div Align = "center">
-                <h1> お問い合わせ完了 </h1>
+            <h1> お問い合わせ完了 </h1>
+            <hr>
+            <div class = "comp">
+                <p>入力情報を確定しました。</p>
                 お問い合わせ番号:
 
             <?php
+            /*-----------------------------------入力情報をCSVファイルに書き込み-----------------------------------------*/
                     $number = $_POST['num'];
                     $lname = $_POST['Lastname'];
                     $fname = $_POST['Firstname'];
@@ -21,15 +25,14 @@
                     $cate = $_POST['category'];
                     $msg = $_POST['msg'];
 
-                    $fp = fopen("manage_list.csv","a+");
-                    fputs($fp,"$number,$lname$fname,$s,$add,$phone,$acount,$info,$cate,$msg\n");
+                    $fp = fopen("manage_list.csv","a+");    //ファイル読み込み
+                    fputs($fp,"$number,$lname$fname,$s,$add,$phone,$acount,$info,$cate,$msg\n"); //ファイル書き込み
 
                     fclose($fp);
 
-                    echo $number;
-
-                 ?>
-
+                    echo $number; //お問い合わせ番号をweb上に表示
+            /*---------------------------------------------------------------------------------------------------------*/
+            ?>
             </div>
         </body>
 

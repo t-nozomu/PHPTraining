@@ -1,6 +1,3 @@
-<?php
-    $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT);
- ?>
 <!DOCTYPE html>
 <html lang = "ja">
     <head>
@@ -10,6 +7,9 @@
     </head>
         <body>
             <h1><div Align = "center" > お問い合わせ内容確認</div></h1>
+
+            <!--　入力情報を確認するため、web上に表示----------------------------->
+
                 <form action = "comp.php" method = "post">
                 <div class = "dd">
                     <div class = "d">
@@ -111,17 +111,24 @@
                         </div>
                     </div>
                     <div class = "d">
-                        <div>
+                    <!--------------------------------------------------------->
+
+                    <!--次の画面へ遷移するためのボタンの生成----------------------------------------->
+                        <div class = "button">
                             <input type ="submit" value = "送信" >
                             <input type ="button" value = "戻る" onclick = "history.back()">
                         </div>
                     </div>
-                    <div class = "d">
+                    <div class = "d" >
                             <a href = "index.html">未入力状態でお書き直しします。</a>
                     </div>
+                    <!---------------------------------------------------------------------------->
                 </div>
 
-
+                <?php
+                    $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT);
+                 ?>
+                <!---web上の内部の値として送信-------------------------------------------------------------------------------------->
                     <input type = "hidden" name = "num" value = "<?php echo $number ;?>">
                     <input type = "hidden" name= "Lastname" value = "<?php  echo $lname;?>">
                     <input type = "hidden" name= "Firstname" value = "<?php  echo $fname;?>">
@@ -129,10 +136,10 @@
                     <input type = "hidden" name= "address" value = "<?php  echo $add;?>">
                     <input type = "hidden" name= "phone" value = "<?php echo $phone[0]."-".$phone[1]."-".$phone[2]; ?>">
                     <input type = "hidden" name= "acount" value = "<?php  echo $acount[0]."@".$acount[1];?>">
-                    <input type = "hidden" name= "info" value = "<?php  foreach($info as $value) echo "$value";?>">
+                    <input type = "hidden" name= "info" value = "<?php  foreach($info as $value) echo "$value ";?>">
                     <input type = "hidden" name= "category" value = "<?php  echo $cate;?>">
                     <input type = "hidden" name= "msg" value = "<?php  echo $msg;?>">
-
+                <!------------------------------------------------------------------------------------------------------------------->
 
                 </form>
         </body>

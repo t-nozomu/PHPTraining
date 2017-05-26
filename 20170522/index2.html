@@ -6,17 +6,18 @@
         <link rel = "stylesheet" type = "text/css" href = "style.css">
     </head>
         <body>
-            <h1> お問い合わせ</h1>
+            <h1> お問い合わせフォーム</h1>
+            <hr>
                 <form action = "web.php" method = "post">
                     <div class ="dd">
                     <div class = "d">
                         <div class = "d1">姓</div>
-                        <div class = "d2"><input type = "text" name = "Lastname" size = "5" maxlength = "10" required ></div>
+                        <div class = "d2"><input type = "text" name = "Lastname" size = "8" maxlength = "10" required ></div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">名</div>
-                        <div class = "d2"><input type = "text" name = "Firstname" size = "5" maxlength = "10" required ></div>
+                        <div class = "d2"><input type = "text" name = "Firstname" size = "8" maxlength = "10" required ></div>
                     </div>
 
                     <div class = "d">
@@ -30,13 +31,13 @@
 
                     <div class = "d">
                         <div class = "d1">住所</div>
-                        <div class = "d2"><input type = "text" name = "address"></div>
+                        <div class = "d2"><input type = "text" name = "address" size = "30"></div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">電話番号</div>
                         <div class = "d2">
-                            <input type = "text" name = "phone[]" size = "3" maxlength = "4" required pattern = "^[0-9]+$">-
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">-
                             <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">-
                             <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">
                         </div>
@@ -45,8 +46,8 @@
                     <div class = "d">
                         <div class = "d1">メールアドレス</div>
                         <div class = "d2">
-                            <input type = "text" name = "acount[]" size = "10">@
-                            <input type = "text" name = "acount[]" size = "10">
+                            <input type = "text" name = "acount[]" size = "12">@
+                            <input type = "text" name = "acount[]" size = "12">
                         </div>
                     </div>
 
@@ -71,15 +72,14 @@
                     </div>
 
                     <div class = "d">
-                        <div class = "d1">質問内容</div>
-                    </div>
+                    <div class = "d1">質問内容</div>
 
-                    <div class = "d">
+                    <div class = "d2">
                         <textarea name = "msg" ></textarea>
                     </div>
-
+                </div>
                     <div class = "d">
-                        <div class = "d1">
+                        <div class = "button">
                         <input type = "submit"  value= "確認" >
                         <input type = "reset" value = "リセット">
                         </div>
