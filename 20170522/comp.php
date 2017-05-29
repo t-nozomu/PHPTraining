@@ -26,6 +26,7 @@
                     $msg = $_POST['msg'];
 
                     $fp = fopen("manage_list.csv","a+");    //ファイル読み込み
+                    $msg = str_replace(",","comma",$msg);
                     fputs($fp,"$number,$lname$fname,$s,$add,$phone,$acount,$info,$cate,$msg\n"); //ファイル書き込み
 
                     fclose($fp);
@@ -33,6 +34,9 @@
                     echo $number; //お問い合わせ番号をweb上に表示
             /*---------------------------------------------------------------------------------------------------------*/
             ?>
+            </div>
+            <div align = "center">
+                    <a href = "index2.html">トップ画面に戻る</a>
             </div>
         </body>
 

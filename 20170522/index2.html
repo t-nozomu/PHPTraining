@@ -12,50 +12,50 @@
                     <div class ="dd">
                     <div class = "d">
                         <div class = "d1">姓</div>
-                        <div class = "d2"><input type = "text" name = "Lastname" size = "8" maxlength = "10" required ></div>
+                        <div class = "d2"><input type = "text" name = "Lastname" size = "8" maxlength = "10" placeholder = "山田" required ></div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">名</div>
-                        <div class = "d2"><input type = "text" name = "Firstname" size = "8" maxlength = "10" required ></div>
+                        <div class = "d2"><input type = "text" name = "Firstname" size = "8" maxlength = "10" placeholder = "太郎" required ></div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">性別</div>
                         <div class = "d2">
-                            <input type= "radio" name = "s" value = "男" checked>男
-                            <input type= "radio" name = "s" value = "女" >女
-                            <input type= "radio" name = "s" value = "不明" >不明
+                            <label><input type= "radio" name = "s" value = "男" checked>男</label>
+                            <label><input type= "radio" name = "s" value = "女" >女</label>
+                            <label><input type= "radio" name = "s" value = "不明" >不明</label>
                         </div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">住所</div>
-                        <div class = "d2"><input type = "text" name = "address" size = "30"></div>
+                        <div class = "d2"><input type = "text" name = "address" size = "30" placeholder = "東京都●●区××"></div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">電話番号</div>
                         <div class = "d2">
-                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">-
-                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">-
-                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$">
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$" placeholder = "000">-
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$" placeholder = "0000">-
+                            <input type = "text" name = "phone[]" size = "4" maxlength = "4" required pattern = "^[0-9]+$" placeholder = "0000">
                         </div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">メールアドレス</div>
                         <div class = "d2">
-                            <input type = "text" name = "acount[]" size = "12">@
-                            <input type = "text" name = "acount[]" size = "12">
+                            <input type = "text" name = "acount[]" size = "12" placeholder = "example" required=>@
+                            <input type = "text" name = "acount[]" size = "12" placeholder = "example.com" required>
                         </div>
                     </div>
 
                     <div class = "d">
                         <div class = "d1">どこで知ったか</div>
                         <div class = "d2">
-                            <input type= "checkbox" name = "info[]" value = "雑誌" >雑誌
-                            <input type= "checkbox" name = "info[]" value = "新聞" >新聞
+                            <label><input type= "checkbox" name = "info[]" value = "雑誌" >雑誌</label>
+                            <label><input type= "checkbox" name = "info[]" value = "新聞" >新聞</label>
                             <input type= "hidden" name = "info[]" value = "">
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                     <div class = "d1">質問内容</div>
 
                     <div class = "d2">
-                        <textarea name = "msg" ></textarea>
+                        <textarea name = "msg" placeholder = "質問内容を入力してください"></textarea>
                     </div>
                 </div>
                     <div class = "d">
