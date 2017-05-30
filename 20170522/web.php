@@ -11,7 +11,7 @@
 
             <!--　入力情報を確認するため、web上に表示----------------------------->
 
-                <form action = "comp.php" method = "post">
+                <form action = "store.php" method = "post">
                 <div class = "dd">
                     <div class = "d">
                         <div class = "d1">姓</div>
@@ -124,8 +124,8 @@
 
                     <!--次の画面へ遷移するためのボタンの生成----------------------------------------->
                         <div class = "button">
-                            <input type ="submit" value = "送信" >
-                            <input type ="button" value = "戻る" onclick = "history.back()">
+                            <input class = "button1" type ="submit" value = "送信" >
+                            <input class = "button2" type ="button" value = "戻る" onclick = "history.back()">
                         </div>
                     </div>
                     <div class = "d" >
@@ -135,7 +135,7 @@
                 </div>
 
                 <?php
-                    $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT);
+                    $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT); //お問い合わせ番号の生成
                  ?>
                 <!---web上の内部の値として送信-------------------------------------------------------------------------------------->
                     <input type = "hidden" name = "num" value = "<?php echo $number ;?>">
