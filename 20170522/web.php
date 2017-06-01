@@ -133,7 +133,9 @@
                     </div>
                     <!---------------------------------------------------------------------------->
                 </div>
-
+                <script type= "text/javascript">
+                    history.pushState(null,null,"index2.html");
+                </script>
                 <?php
                     $number = str_pad(mt_rand(),10,0,STR_PAD_LEFT); //お問い合わせ番号の生成
                  ?>
@@ -149,7 +151,6 @@
                     <input type = "hidden" name= "category" value = "<?php  echo $cate;?>">
                     <input type = "hidden" name= "msg" value = "<?php  echo $msg;?>">
                 <!------------------------------------------------------------------------------------------------------------------->
-
                 </form>
         </body>
  </html>
