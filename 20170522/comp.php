@@ -19,7 +19,7 @@
             </div>
             <div align = "center">
                     <a href = "index2.html">トップ画面に戻る</a>
-            </div>            
+            </div>
         </body>
 
 
